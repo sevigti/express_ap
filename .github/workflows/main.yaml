@@ -27,4 +27,5 @@ jobs:
         with:
           context: .
           push: true
+          no-cache: true  # force fresh build
           tags: ${{ secrets.DOCKER_USERNAME }}/express_node:latest
